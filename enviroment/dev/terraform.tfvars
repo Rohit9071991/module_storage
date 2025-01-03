@@ -23,7 +23,7 @@ vnet_details = {
 }
 subnet_details = {
   subnet1 = {
-    name                 = "qwertysubnet"
+    name                 = "qwertysubnet1"
     resource_group_name  = "qwerty"
     virtual_network_name = "qwertyvnet"
     address_prefixes     = ["10.0.1.0/24"]
