@@ -8,9 +8,14 @@ module "storage_account" {
   stg        = var.stg_details
 }
 module "vnet" {
-  depends_on = [ module.storage_account ]
-  source = "../../modules/virtual_network"
-  vnet = var.vnet_details
-  }
+  depends_on = [module.storage_account]
+  source     = "../../modules/virtual_network"
+  vnet       = var.vnet_details
+}
+module "subnet" {
+  depends_on = [module.vnet]
+  source     = "../../modules/subnet"
+  subnet     = var.subnet_details
+}
 
 
