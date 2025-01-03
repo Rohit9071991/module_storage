@@ -4,7 +4,6 @@ rg_details = {
     location = "centralindia"
   }
 }
-
 stg_details = {
   stg1 = {
     name                     = "qwertystorage"
@@ -12,5 +11,13 @@ stg_details = {
     location                 = "centralindia"
     account_tier             = "Standard"
     account_replication_type = "GRS"
+  }
+}
+vnet_details = {
+  vnet1 = {
+    name                = "qwertyvnet"
+  location            = "centralindia"
+  resource_group_name = "qwerty"
+  address_space       = ["10.0.0.0/16"]
   }
 }
