@@ -29,3 +29,11 @@ subnet_details = {
     address_prefixes     = ["10.0.1.0/24"]
   }
 }
+pip_details = {
+  pip = {
+    name                = "qwertypip"
+    resource_group_name = "qwerty"
+    location            = "centralindia"
+    allocation_method   = "Static"
+  }
+}

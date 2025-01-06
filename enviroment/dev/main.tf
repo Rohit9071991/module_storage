@@ -18,4 +18,8 @@ module "subnet" {
   subnet     = var.subnet_details
 }
 
-
+module "pip" {
+  depends_on = [ module.subnet ]
+  source = "../../modules/pip"
+  public_ip = var.pip_details
+}
